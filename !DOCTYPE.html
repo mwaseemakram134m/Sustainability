@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Waseem Akram | ESG & Sustainability Expert</title>
+
+  <!-- Tailwind CSS (CDN build) -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+  <!-- Alpine.js (tiny JS for animations / mobile nav) -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Meta + basic theming -->
+  <meta name="description" content="ESG & Sustainability Expert — GHG accounting, net-zero strategy, ISO management systems, and more." />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body class="antialiased text-gray-800">
+  <!-- HERO -->
+  <header class="relative flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-br from-emerald-50 to-teal-100">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Muhammad Waseem Akram</h1>
+    <p class="max-w-2xl text-lg md:text-xl mb-6">
+      ESG &amp; Sustainability Expert · 9.5+ years guiding organizations toward net-zero through GHG accounting,
+      decarbonization strategy, and certified management systems.
+    </p>
+    <div class="flex gap-4">
+      <a href="#contact" class="rounded-2xl shadow-xl bg-emerald-600 text-white px-6 py-3 text-lg hover:bg-emerald-700 transition">
+        Work with me
+      </a>
+      <a href="/Muhammad_Waseem_Akram_CV.pdf" target="_blank" rel="noopener"
+         class="rounded-2xl shadow-xl border border-emerald-600 text-emerald-600 px-6 py-3 text-lg hover:bg-emerald-50 transition">
+        View CV
+      </a>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 px-4 bg-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Core Services</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Service card template -->
+      <template x-for="service in [
+          {t:'GHG Accounting & Verification', d:'End-to-end Scope 1-3 inventories aligned with ISO 14064-1 and the GHG Protocol, incl. assurance support.'},
+          {t:'Net-Zero & SBTi Roadmaps', d:'Science-based pathways, target setting, and mitigation portfolios to hit interim and 2050 ambitions.'},
+          {t:'ESG Strategy & Reporting', d:'Materiality assessments, KPI frameworks (GRI, SASB, TCFD), and disclosures that win ratings upgrades.'},
+          {t:'ISO Management Systems', d:'Design, implementation & auditing of ISO 14001, 50001, 14064, 26000, achieving seamless certification.'},
+          {t:'Sustainability Training', d:'Tailored workshops and e-learning that embed climate literacy and build cross-functional ESG capability.'},
+          {t:'Lifecycle & Circularity Insights', d:'LCA screening, waste audits, and circular design sprints that unlock cost savings and brand value.'},
+        ]" x-init>
+        <div class="rounded-2xl shadow-lg p-6" x-data>
+          <h3 class="text-xl font-semibold mb-2" x-text="service.t"></h3>
+          <p x-text="service.d"></p>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials" class="py-20 px-4 bg-emerald-50">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Credentials &amp; Toolkits</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <template x-for="item in [
+          'ISO Lead Auditor (14001, 50001, 14064, 14068, 26000, 22301, 20400, 9001, 45001)',
+          'Certified GRI, CDP, TCFD & SBTi practitioner',
+          'EcoVadis &amp; UNGC reporting expert',
+          'Battery–DG, DG–Solar, Synchronous DG optimization',
+          '9.5 years across GCC &amp; South Asia',
+          'Published SME thought-leader on LinkedIn'
+        ]" x-init>
+        <div class="rounded-2xl shadow-lg p-6 text-center text-sm font-medium" x-text="item"></div>
+      </template>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-4 bg-white">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <img src="/profile_photo.jpg" alt="Muhammad Waseem Akram portrait"
+           class="w-full rounded-2xl shadow-xl object-cover" />
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Who I Am</h2>
+        <p class="mb-4 text-justify">
+          I partner with construction, industrial and service-sector leaders across the MENA region to
+          navigate the complex landscape of ESG demands. From rapid GHG baselines to executive-level
+          net-zero strategy, I translate science into clear action plans that de-risk compliance,
+          unlock operational savings and inspire stakeholder confidence.
+        </p>
+        <p class="text-justify">
+          My mission is simple: empower organizations to thrive in a low-carbon economy while creating
+          genuine positive impact for communities and the planet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-4 bg-emerald-600 text-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Let’s Talk</h2>
+    <div class="max-w-xl mx-auto grid gap-6">
+      <div class="flex items-center gap-4">
+        <!-- Heroicons mini/solid mail -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M1.5 4A2.5 2.5 0 0 1 4 1.5h16A2.5 2.5 0 0 1 22.5 4v16a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 20V4Zm2 .75v14.5h16V4.75L12 12.5 3.5 4.75Z"/>
+        </svg>
+        <a href="mailto:waseem@example.com" class="underline">waseem@example.com</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18 22a4 4 0 0 0 4-4 10 10 0 0 0-10-10 4 4 0 0 0-4 4v2a10 10 0 0 0 10 10Z"/>
+        </svg>
+        <a href="tel:+971500000000" class="underline">+971 50 000 0000</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M3 3h18v18H3V3Z" fill="none"/><path d="M8.72 19H5.88V9h2.84v10Zm-1.42-11.4a1.64 1.64 0 1 1 0-3.28 1.64 1.64 0 0 1 0 3.28ZM19 19h-2.7v-5.4c0-1.29-.47-2.17-1.65-2.17-.9 0-1.43.6-1.67 1.18-.09.22-.11.53-.11.84V19h-2.7s.04-8.7 0-10h2.7v1.42c.36-.54 1.02-1.32 2.48-1.32 1.81 0 3.17 1.18 3.17 3.73V19Z"/>
+        </svg>
+        <a href="https://www.linkedin.com/in/mwaseemakram" target="_blank" rel="noopener" class="underline">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm bg-emerald-700 text-emerald-100">
+    © <span x-text="new Date().getFullYear()"></span> Muhammad Waseem Akram. All rights reserved.
+  </footer>
+</body>
+</html>
